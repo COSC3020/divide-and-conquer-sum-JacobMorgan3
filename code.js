@@ -2,11 +2,11 @@ var sum = null;
 
 function divideAndConquerSum(a) 
 {
-    let interval = Math.ceil(a.length / 3);
-    let start = 0;
-    let endFirstThird = interval;
-    let endSecondThird = interval * 2;
-    let end = interval * 3;
+    var interval = Math.ceil(a.length / 3);
+    var start = 0;
+    var endFirstThird = interval;
+    var endSecondThird = interval * 2;
+    var end = interval * 3;
 
     if(a.length == 0)
         return 0;
@@ -29,5 +29,5 @@ function divideAndConquerSum(a)
 }
 
 
-var array = [];
+var array = [0];
 console.log(divideAndConquerSum(array));
