@@ -6,7 +6,7 @@ function divideAndConquerSum(a)
     let start = 0;
     let endFirstThird = interval;
     let endSecondThird = interval * 2;
-    let end = interval * 3;
+    let end = a.length;
 
     if(a.length < 2) 
     {
