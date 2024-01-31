@@ -8,13 +8,13 @@ function divideAndConquerSum(a)
     var endSecondThird = interval * 2;
     var end = interval * 3;
 
-    if(a.length == 0)
+    if(a.length == 1)
         return 0;
     if(a.length < 2) 
     {
         if(a.length == 1)
         {
-            sum = sum + a[0];
+            sum = a[0];
             return sum;
         }   
     }
