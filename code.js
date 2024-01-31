@@ -10,18 +10,20 @@ function divideAndConquerSum(a)
 
     if(a.length < 2) 
     {
-        for(let i = 0; i < a.length; i++)
+        if(a.length == 1)
         {
-            sum = sum + a[i];
-        }
-        return;
+            sum = sum + a[0];
+            return sum;
+        }   
     }
 
     else 
+    {
         divideAndConquerSum(a.slice(0, endFirstThird));
         divideAndConquerSum(a.slice(endFirstThird, endSecondThird));
         divideAndConquerSum(a.slice(endSecondThird, end));
-
+    }
+        
     return sum;
 }
 
