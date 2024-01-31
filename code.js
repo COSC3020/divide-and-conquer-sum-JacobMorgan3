@@ -4,7 +4,7 @@ function divideAndConquerSum(a)
 {
     var interval = Math.floor(a.length / 3);
     var start = 0;
-    var mid2 = Math.floor(interval + a.length)/2)
+    var mid2 = Math.floor((interval + a.length)/2)
     var endSecondThird = interval * 2;
     var end = interval * 3;
 
