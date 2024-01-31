@@ -1,16 +1,33 @@
-function divideAndConquerSum(a){
-    if (a.length == 0){
+var sum = null;
+
+function divideAndConquerSum(a) 
+{
+    let interval = Math.ceil(a.length / 3);
+    let start = 0;
+    let endFirstThird = interval;
+    let endSecondThird = interval * 2;
+    let end = interval * 3;
+
+    if(a.length == 0)
         return 0;
+    if(a.length < 2) 
+    {
+        if(a.length == 1)
+        {
+            sum = sum + a[0];
+            return sum;
+        }   
     }
 
-    if (a.length == 1) {
-        return a[0];
+    else 
+    {
+        return divideAndConquerSum(a.slice(0, endFirstThird)) + divideAndConquerSum(a.slice(endFirstThird, endSecondThird)) +  divideAndConquerSum(a.slice(endSecondThird, end));
+       
     }
-    
-    var mid1 = Math.floor(a.length/3);
-    var mid2 = Math.floor((mid1 + a.length)/2);
-    
-    return divideAndConquerSum(a.slice(0,mid1))+divideAndConquerSum(a.slice(mid1,mid2))+divideAndConquerSum(a.slice(mid2));
+        
+   // return sum;
 }
 
 
+var array = [];
+console.log(divideAndConquerSum(array));
