@@ -1,4 +1,4 @@
-var sum = 0;
+var sum = null;
 
 function divideAndConquerSum(a) 
 {
@@ -27,5 +27,4 @@ function divideAndConquerSum(a)
     return sum;
 }
 
-var array = [1,5,-1,4];
-console.log(divideAndConquerSum(array));
+
