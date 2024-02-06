@@ -1,4 +1,4 @@
-var sum = 0;
+let sum = 0;
 
 function divideAndConquerSum(a) 
 {
