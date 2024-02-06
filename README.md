@@ -26,3 +26,18 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+
+
+Answer: T(n) = 0		    if n = 0
+	             1		    if n = 1
+	             3T(n/3) 	if n > 1
+
+	             (3^i)T(n/3^i)   n/(3^i) = 1  ==  nlog(n)
+
+	      $\Theta$ = nlog(n)
+
+       The Time complexity of this divide and conquer algorithm is nlog(n) because of our recurrence relation being simplified to (3^i)T(n/3^i) if we apply the log/exponents rule we get i = nlog(n)  So we have our base case T(1) + nlog(n) and since we jsut want the asymptotic time complexity we can drop T(1). 
+
+
+       
