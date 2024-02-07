@@ -31,7 +31,7 @@ most important part. Add your answer to this markdown file.
 
 Answer: T(n) =  0		if n = 0
 		1		if n = 1
-	        3T(n/3) + n     if n > 1
+	        3T(n/3)     if n > 1
 
 	        (3^i)T(n/3^i) + n    n/(3^i) = 1  ==  log(n)
 
