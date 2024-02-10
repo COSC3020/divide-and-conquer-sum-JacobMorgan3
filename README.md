@@ -29,8 +29,8 @@ most important part. Add your answer to this markdown file.
 
 
 
-Answer:
- T(n) =  0	if n = 0
+#Answer:
+T(n) =  0	if n = 0
 1		if n = 1
 3T(n/3)     	if n > 1
 
