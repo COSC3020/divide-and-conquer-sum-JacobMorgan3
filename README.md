@@ -30,11 +30,14 @@ most important part. Add your answer to this markdown file.
 
 
 ### Answer:
-T(n) =  0	if n = 0
-1		if n = 1
-3T(n/3)     	if n > 1
+Recurence Relation:<br/>
+T(n) =  0	if n = 0<br/>
+1		if n = 1<br/>
+3T(n/3)     	if n > 1<br/>
 
-(3^i)T(n/3^i) + n    n/(3^i) = 1  ==  log(n)
+(3^i)T(n/3^i) + n<br/> 
+
+n/(3^i) = 1  so i = log(n)
 
 $\Theta$ = n
        
