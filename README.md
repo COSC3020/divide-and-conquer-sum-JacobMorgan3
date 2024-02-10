@@ -29,13 +29,14 @@ most important part. Add your answer to this markdown file.
 
 
 
-Answer: T(n) =  0		if n = 0
-		1		if n = 1
-	        3T(n/3)     if n > 1
+Answer:
+ T(n) =  0	if n = 0
+1		if n = 1
+3T(n/3)     	if n > 1
 
-	        (3^i)T(n/3^i) + n    n/(3^i) = 1  ==  log(n)
+(3^i)T(n/3^i) + n    n/(3^i) = 1  ==  log(n)
 
-	      $\Theta$ = n
+$\Theta$ = n
        
 The Time complexity of this divide and conquer algorithm is n because our recurrence relation is simplified to (3^i)T(n/3^i) + c  c = constant if we apply the log/exponents rule we get i = log(n)  After plugging i = log(n) back in we get nT(1) T(1) = 1 so we are left with big theta is equal to n. 
 
