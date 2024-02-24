@@ -43,8 +43,7 @@ $n * 1 + \sum_{j=0}^{log{_3}{(n-1)}} 3^j$ <br/>
 
 the sum has a linear growth rate or less, because the exponent and log 'cancel' each other out. <br/>
 
-$\Theta$ = n
-
+$T(n) \in \Theta(n)$
 
 
        
